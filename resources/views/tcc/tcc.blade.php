@@ -38,7 +38,7 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0" >
-                    <H1>Home Page</H1>
+                    <H1>The Coffee Club Page</H1>
                 </div>
                 <div>
                     Visit <a href="{{ url ('/') }}">HOME</a>  |  <a href="{{ route('tpc') }}">TPC</a>  |  <a href="{{ route('tcc') }}">TCC</a>  |  <a href="{{ route('bbq') }}">BBQ</a>  |  <a href="{{ route('sw') }}">SW</a>  |  <a href="{{ route('dq') }}">DQ</a>  |  <a href="{{ route('kk') }}">KK</a>
