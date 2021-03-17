@@ -40,9 +40,7 @@
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0" >
                     <H1>The Coffee Club Page</H1>
                 </div>
-                <div>
-                    Visit <a href="{{ url ('/') }}">HOME</a>  |  <a href="{{ route('tpc') }}">TPC</a>  |  <a href="{{ route('tcc') }}">TCC</a>  |  <a href="{{ route('bbq') }}">BBQ</a>  |  <a href="{{ route('sw') }}">SW</a>  |  <a href="{{ route('dq') }}">DQ</a>  |  <a href="{{ route('kk') }}">KK</a>
-                </div>
+                @include('incs.menu')
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
