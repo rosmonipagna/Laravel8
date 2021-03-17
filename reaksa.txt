@@ -1,0 +1,2 @@
+please read this and install laravel8
+https://laravel.com/docs/8.x/installation
