@@ -22,12 +22,20 @@ use App\Http\Controllers\Users\Users;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::group(['prefix'=>'brands'],function(){
-    Route::get('/tpc/tpc', [TPC::class, 'index']);
-    Route::get('/tcc/tcc', [TCC::class, 'index']);
-    Route::get('/sw/sw', [SW::class, 'index']);
-    Route::get('/dq/dq', [DQ::class, 'index']);
+/*Route::group(['prefix'=>'brands'],function(){
+    Route::get('/tpc/tpc', [TPC::class, 'index'])->name('tpc');
+    Route::get('/tcc/tcc', [TCC::class, 'index'])->name('tcc');
+    Route::get('/sw/sw', [SW::class, 'index'])->name('sw');
+    Route::get('/dq/dq', [DQ::class, 'index'])->name('dq');
     Route::get('/bbq/bbq', [BBQ::class, 'index'])->name('bbq');
-    Route::get('/kk/kk', [KK::class, 'index']);
+    Route::get('/kk/kk', [KK::class, 'index'])->name('kk');
+});*/
+Route::prefix('brands')->group(function () {
+    Route::get('/tpc/tpc', [TPC::class, 'index'])->name('tpc');
+    Route::get('/tcc/tcc', [TCC::class, 'index'])->name('tcc');
+    Route::get('/sw/sw', [SW::class, 'index'])->name('sw');
+    Route::get('/dq/dq', [DQ::class, 'index'])->name('dq');
+    Route::get('/bbq/bbq', [BBQ::class, 'index'])->name('bbq');
+    Route::get('/kk/kk', [KK::class, 'index'])->name('kk');
 });
-Route::get('/usr/usr',[Users::class, 'index']);
+Route::get('/users/setup',[Users::class, 'index'])->name('usr');
