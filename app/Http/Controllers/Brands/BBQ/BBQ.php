@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\TPC;
+namespace App\Http\Controllers\Brands\BBQ;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class TPC extends Controller
+class BBQ extends Controller
 {
     //
     public function index(){
-        return view('tpc/tpc');
+        return view('brands/bbq/bbq');
     }
 }

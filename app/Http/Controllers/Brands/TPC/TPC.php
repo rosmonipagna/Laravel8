@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\TCC;
+namespace App\Http\Controllers\Brands\TPC;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class TCC extends Controller
+class TPC extends Controller
 {
     //
     public function index(){
-        return view('tcc/tcc');
+        return view('brands/tpc/tpc');
     }
 }

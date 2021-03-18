@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\KK;
+namespace App\Http\Controllers\Brands\SW;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class KK extends Controller
+class SW extends Controller
 {
     //
     public function index(){
-        return view('kk/kk');
+        return view('brands/sw/sw');
     }
 }

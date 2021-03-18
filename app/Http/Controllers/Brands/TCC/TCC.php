@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\DQ;
+namespace App\Http\Controllers\Brands\TCC;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DQ extends Controller
+class TCC extends Controller
 {
     //
     public function index(){
-        return view('dq/dq');
+        return view('brands/tcc/tcc');
     }
 }
