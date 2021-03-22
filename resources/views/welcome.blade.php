@@ -38,7 +38,7 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0" >
-                    <H1>Dashboard Page</H1>
+                    <H1>Welcome Page</H1>
                 </div>
 
 

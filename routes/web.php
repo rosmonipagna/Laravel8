@@ -39,6 +39,7 @@ Route::prefix('brands')->group(function () {
     Route::get('/kk/kk', [KK::class, 'index'])->name('kk');
 });
 Route::get('/users/setup',[Users::class, 'index'])->name('usr');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
